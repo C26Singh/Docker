@@ -1,5 +1,5 @@
 # Docker  
-Docker is a virtualization tool used to package application and its dependencies inside it as portable artifacts.
+Docker is a platform that allows developers to package, distribute, and run applications and their dependencies in isolated containers.
 ## Table of Contents
 
 - [Container](#container)
