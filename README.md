@@ -18,6 +18,6 @@ Docker is a platform that allows developers to package, distribute, and run appl
   before  
  - Most of the services you need to installed on os directly
  - MS SQL Server , postgresql, redis...  
-  after  
+  after    
  - no need to directly installed services on os.
  - container has its own isolated os layer.
