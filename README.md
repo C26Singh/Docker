@@ -14,3 +14,10 @@ Docker is a platform that allows developers to package, distribute, and run appl
 ## Container repository
 - private repository
 - public repository---------->Docker Hub
+## Develop application
+  before  
+ - Most of the services you need to installed on os directly
+ - MS SQL Server , postgresql, redis...
+  after  
+ - no need to directly installed services on os.
+ - container has its own isolated os layer.
