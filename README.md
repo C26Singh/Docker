@@ -10,11 +10,26 @@ Docker is a platform that allows developers to package, distribute, and run appl
 
 ## Container
 - A way to package application with all the dependencies and configuration.  
-- portible artifacts
+- portible artifacts  
+    Application Image 2
+--------------------------
+  Application Image 1
+--------------------------
+    Linux Base Image
+
 ## Container repository
 - private repository
 - public repository---------->Docker Hub
 ## Develop application
+- **Before**:
+  - Most of the services you need to install on the OS directly.
+  - MS SQL Server, PostgreSQL, Redis...
+
+- **After**:
+  - No need to directly install services on the OS.
+  - Container has its own isolated OS layer.
+
+## Deploy application
 - **Before**:
   - Most of the services you need to install on the OS directly.
   - MS SQL Server, PostgreSQL, Redis...
