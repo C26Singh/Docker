@@ -10,12 +10,9 @@ Docker is a platform that allows developers to package, distribute, and run appl
 
 ## Container
 - A way to package application with all the dependencies and configuration.  
-- portible artifacts  
-    Application Image 2
---------------------------
-  Application Image 1
---------------------------
-    Linux Base Image
+- portible artifacts
+- Built of layers of images Like-  
+  postgres image <-----redis Image <------  ..... <----------Linux base Image
 
 ## Container repository
 - private repository
