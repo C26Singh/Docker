@@ -11,3 +11,5 @@ Docker is a platform that allows developers to package, distribute, and run appl
 ## Container
 - A way to package application with all the dependencies and configuration.  
 - portible artifacts
+- private repository
+- public repository---------->Docker Hub
