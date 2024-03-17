@@ -90,6 +90,12 @@ Docker is a platform that allows developers to package, distribute, and run appl
    - Kitematic------->GUI tool provided by Docker to simplify the management of Docker containers and images, allowing users to easily search, download, and manage Docker applications
    - Orcale VM Virtualbox->Oracle VM VirtualBox is a powerful, open-source virtualization software that enables users to run multiple operating systems simultaneously on a single physical machine
 
+## Basic Commands
+   - **Container vs Image**
+   - **Version and Tag**
+   - **Commands**
+     
+
       
        
    
