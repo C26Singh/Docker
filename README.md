@@ -84,11 +84,11 @@ Docker is a platform that allows developers to package, distribute, and run appl
 
    - **What docker Installer brings to your system?**
    - Docker Toolbox-->workaround for older version that do not support running docker natively.
-   - Docker cli------>is a command-line interface that allows users to interact with Docker containers and manage containerized applications using a set of intuitive commands.
-   - Docker Machine
-   - Docker compose
-   - Kitematic
-   - Orcale VM Virtualbox
+   - Docker cli------>is used to manage  Docker containers and  containerized applications using a set of intuitive commands.
+   - Docker Machine-->tool used to create|manage|deploy docker host on VM | Cloud providers
+   - Docker compose--> tool for defining and running multi-container Docker applications. Allow users to specify services, networks, and volumes required for an application in a single YAML file
+   - Kitematic------->GUI tool provided by Docker to simplify the management of Docker containers and images, allowing users to easily search, download, and manage Docker applications
+   - Orcale VM Virtualbox->Oracle VM VirtualBox is a powerful, open-source virtualization software that enables users to run multiple operating systems simultaneously on a single physical machine
 
       
        
