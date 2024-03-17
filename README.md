@@ -94,6 +94,47 @@ Docker is a platform that allows developers to package, distribute, and run appl
    - **Container vs Image**
    - **Version and Tag**
    - **Commands**
+
+    - docker pull
+    - docker run   {pull+start}  new container
+    - docker start containerId
+    - docker stop   containerId
+    - docker ps
+    - docker run -d runs in deattached mode in a terminal {meaning when you close the terminal it will still up and running}
+    - docker ps -a -->lists all the container running or stopped
+    - docker images
+    - docker run redis {start container in a terminal in an attached mode --> meaning when you close the terminal it will close}
+    
+## Container vs Image
+
+   - container is running environment of image.
+   - virtual file system
+   - port binded: talk to application running inside of the container.
+   - application image:postres, redis, mongo
+   - environment config
+
+## How do you use any running container?
+   - each container have port {listening incoming requests}   
+## Container Port Vs Host Port
+   - **When multiple container is listening on same port how does it work without any conflict?**
+   - Host  open port {5000,3000,3001}----> Container port{5000,3000,3000}     port binding between container and host.
+   - Host port should not conflict
+   - request--->app://localhost:3001---forwarded to--->3000 container port
+## How to do binding between host and container port
+   - During run command
+   - **docker run -p6000:6379**
+
+## Debugging container
+   - docker logs containerId|name
+   - docker run -d -p6000:6379 --name redis-older redis:4.4
+   - docker exec -it{interactive terminal} container_id /bin/bash
+   - root@coIdl09090:/data# ls   --->directory
+   - root@coIdl09090:/data# pwd
+   - root@coIdl09090:/data# cd /   --->{home directory}
+   - root@coIdl09090:/data# env    --->{environmental variables}
+   - root@coIdl09090:/data exit    --->{to exit the terminal}
+     
+    
      
 
       
