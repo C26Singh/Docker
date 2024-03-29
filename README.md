@@ -133,6 +133,24 @@ Docker is a platform that allows developers to package, distribute, and run appl
    - root@coIdl09090:/data# cd /   --->{home directory}
    - root@coIdl09090:/data# env    --->{environmental variables}
    - root@coIdl09090:/data exit    --->{to exit the terminal}
+## docker-compose
+   - tool to manage with lots of container  
+   - docker-compose -f mongo.yaml up|down
+   - creates its own network
+
+## building our own docker image-docker file
+  - you have a app that connects to mongoDb container
+  - but want to deploy this app
+  - need dockerfile
+  - source code commit-->CI/Jenkins---->make build ---->package into image---->pushed into docker-repository.
+## dockerFile
+  - Docker file is blue print for creating docker images
+  - 
+
+   
+     
+   
+   
      
     
      
