@@ -145,8 +145,44 @@ Docker is a platform that allows developers to package, distribute, and run appl
   - source code commit-->CI/Jenkins---->make build ---->package into image---->pushed into docker-repository.
 ## dockerFile
   - Docker file is blue print for creating docker images
+  - FROM, ENV, RUN,CMD command
+## Build docker image from docker file
+  - docker build -t my-app:1.0 path_docker_file(. for same directory)
+  - Start my-app container to verify
+  - docker exec -it /bin/bash  or /bin/sh
+  - ls
+  - env
+  - ls /home/app/
+  - copy ./app  /home/app/
+## Private docker registry
+  - amazond ECR
+  - create a private docker repositroy for image
+  - in amazon you need to create own registry for each images
+## How to push images to registry
+  - click on repository and you can see view push command
+  - you need to do 2 things in order to push an image to registry
+  - 1. have to login into private registry  
+    2. build you images  
+    3. tag your images  
+    4. push your images  
+   
+## How to login AWS
+  - use login command to AWS
+  - in order to use this command you need to have aws cli and credential configured.
+## image naming in docker repositories
+  - registryDomain/imagename:tag
+  - host:port/registry/imageName:tag
+  - but pulling look likes this docker pull mongo:4.4
+  - shorthand command for registryDomain/imagename:tag
+  - in AWS we will use full name
+  - docker tag may-app:version fullname
+  - docker push fullname
+## Deploy containerlized app
+  - our app image is pushed to registry
+  - Now deploy app on dev server
+  - dev server need to logged in to private registry in order to pull the image
   - 
-
+  - 
    
      
    
