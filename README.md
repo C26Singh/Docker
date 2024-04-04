@@ -181,8 +181,41 @@ Docker is a platform that allows developers to package, distribute, and run appl
   - our app image is pushed to registry
   - Now deploy app on dev server
   - dev server need to logged in to private registry in order to pull the image
-  - 
-  - 
+  - image:registrypath/myapp:1.0
+  - port:
+  - -3000:3000
+
+## Docker Volumes
+   - **When do we need docker volume**?----->For Data persistence in docker
+   - inside docker virtual file system works
+   - var/lib/mysql/data  -----when you delete container it will remove
+   - **What is docker volume**?
+   - Docker volumes works when we plug the physical file system with virtual file system
+   - home/mount/data---plugeed in with-> var/lib/mysql/data
+   - when container restarts virtual file system replicated the data from physical files
+   - 
+   - **3 Volume types**
+   - Host Volume--->here you are deciding where physical file of data
+   - -v /home/mount/data:/var/lib/mysql/data
+   -  Anonymous Volume
+   -  -v /var/lib/mysql/data ----> here creating volume just by proving docker file
+   -  on host var/lib/docker/volume/random hash/_data
+   -  Named Volume
+   -  -v name:/var/lib/mysql/data
+   -  Do not need to know the path
+   -  in dcoker file
+   -  volumes:
+   -   mongo-data:/var/lib/mysql/data
+
+   - volumes:
+   -   mongo-data:
+   -      driver:local--------->create file on host
+   -  
+   - **Docker volumes in docker-compose files**
+   - if you  do not mention virtual file directroy the default is /data/db
+   - docker exec -it 2342551512 sh
+   - ls /data/db
+   
    
      
    
