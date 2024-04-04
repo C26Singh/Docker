@@ -215,6 +215,9 @@ Docker is a platform that allows developers to package, distribute, and run appl
    - if you  do not mention virtual file directroy the default is /data/db
    - docker exec -it 2342551512 sh
    - ls /data/db
+   - **See where the volums are located?**
+   - c:\programdata\docker\volumes
+   - /var/lib/docker/volumes
    
    
      
